@@ -9,6 +9,8 @@ img: 'img/posts/recap.jpg'
 
 ![Recap]({{ site.baseurl }}/img/posts/recap.jpg){: .img-responsive .center-block }
 
+Post by Michael Rosario
+
 I want to share a sincere thank you to our Google developer group(GDG) leaders in Florida for their efforts in organizing the Google DevFest Florida conference. On November 11th, we had an awesome time connecting with developers on topics ranging from VR, AR trends, machine learning, and advancing the open web. I enjoyed getting to serve with other speakers and technologists who believe in giving back to their local developer community and connecting with other GDG leaders.   We especially enjoyed connecting with developers who shared that they just started their career in software development or said that DevFestFL was their first developer conference. It was cool to see that the conference attracted developers from across the country too.
 
 In this post, I wanted to share a few impressions and resources that you might find helpful in your work.
@@ -77,3 +79,14 @@ Android cake
 
 Disney kindly provided a fireworks display for our conference.  Thanks Mike Traverso for arranging this!   🙂
 ![Fireworks]({{ site.baseurl }}/img/posts/recap-fireworks.jpg){: .img-responsive .center-block }
+
+
+About @MichaelRosario
+
+As an experienced software developer with over 19 years of experience, he enjoys helping organizations with agile software development, promoting cultures of innovation, and creative business solutions.  He enjoys helping organizations and software teams discover the craft of continuous improvement.  Michael serves as a community
+organizer with [GDGCentralFlorida.org](http://GDGCentralFlorida.org) .
+
+Check out his blog for makers and software professionals at [InspiredToEducate.NET](http://InspiredToEducate.NET).
+
+
+
