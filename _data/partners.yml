@@ -1,0 +1,9 @@
+-
+  group: "Diamond sponsors"
+  elements:
+   - {name: "Google Developers", description: "Google Developers", link: "https://developers.google.com/groups/", imageUrl: "google-developers.svg"}
+-
+  group: "General sponsors"
+  elements:
+  - {name: "Google", description: "Google", link: "https://developers.google.com/", imageUrl: "google-developers.svg"}
+  - {name: "GDG", description: "Google Developer Groups", link: "https://developers.google.com/groups/", imageUrl: "gdg-logo-small.svg"}

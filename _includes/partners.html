@@ -1,0 +1,43 @@
+<div id="partners" class="partners">
+    <div class="site-card-container mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col center-align-items">
+
+        <div class="col-lg-10 col-lg-offset-1 center-align-items">
+          {% for partner in site.data.partners %}
+          <div class="partner-header mdl-typography--font-light mdl-typography--display-1-color-contrast">{{ partner.group }}</div>
+          <ul class="list-inline">
+              {% for element in partner.elements %}
+              <li>
+                  <a href="{{ element.link }}" target="_blank">
+                      <img {% if element.width != null %} style="width: {{ element.width }};"{% endif %} src="{{ site.baseurl }}/img/partners/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}">
+                  </a>
+              </li>
+              {% endfor %}
+          </ul>
+          {% endfor %}
+
+          <div class="partner-header mdl-typography--font-light mdl-typography--display-1-color-contrast">Organizers</div>
+            {% for organizer in site.data.organizers %}
+              {% if organizer.group == "Organizers" %}
+                <ul class="list-inline">
+                    {% for element in organizer.elements %}
+                    <li {% if element.width != null %} style="width: {{ element.width }};"{% endif %}>
+                        <a href="{{ element.link }}" target="_blank">
+                            <img src="{{ site.baseurl }}/img/partners/{{ element.imageUrl }}" title="{{ element.description }}" alt="{{ element.name }}">
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+              {% endif %}
+            {% endfor %}
+        </div>
+      </div>
+      <div class="centered-div">
+        <a class="site-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="mailto:organizers@devfestflorida.org" target="_blank">Become a Sponsor</a>
+        &nbsp;&nbsp;&nbsp;
+        <a class="site-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://firebasestorage.googleapis.com/v0/b/devfestflorida-ab0b4.appspot.com/o/DevFestFlorida-Partnership-2019.pdf?alt=media&token=e7f7aa05-309d-40c4-b628-8271d91d9806" target="_blank">Partnership Opportunities</a>
+      </div>
+      <div class="centered-div">
+      </div>
+    </div>
+</div>
