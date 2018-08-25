@@ -1,26 +1,49 @@
 footerBlocks:
--
-  title: "For Visitors"
-  links:
-   - {link: "/organizers/", text: "Organizers"}
-   - {link: "/blog/2017/01/01/code-of-conduct.html", text: "Code of Conduct"}
-   - {link: "https://developers.google.com", text: "Google Developers"}
--
-  title: "For Partners"
-  links:
-   - {link: "https://firebasestorage.googleapis.com/v0/b/devfestflorida-ab0b4.appspot.com/o/DevFestFlorida-Partnership-2019.pdf?alt=media&token=e7f7aa05-309d-40c4-b628-8271d91d9806", text: "Partnership Proposition", subtext: "Read more about the benefits you'll receive for being a generous sponsor of DevFest Florida 2017. From your logo on our shirts/website to the opportunity to address the crowd.", imgUrl: "/img/logos/partnership-2019.png" }
-   - {link: "mailto:organizers@devfestflorida.org", text: "Become a Sponsor", subtext: "Sponsor today and help DevFest Florida pay for speaker travel, provide tickets to those that cannot afford them, throw a fantastic after conference party, give away cool swag & prizes", imgUrl: "/img/logos/click-to-sponsor.jpg" }
--
-  title: "Contact Us"
-  links:
-   - {link: "mailto:organizers@devfestflorida.org", text: "organizers@devfestflorida.org"}
-   -
-    social:
-     - {link: "https://plus.google.com/+DevFestFloridaOrg", text: '<i class="fa fa-google-plus" aria-hidden="true"></i>' }
-     - {link: "https://twitter.com/devfestflorida", text: '<i class="fa fa-twitter" aria-hidden="true"></i>' }
-     - {link: "https://facebook.com/devfestflorida", text: '<i class="fa fa-facebook-official" aria-hidden="true"></i>' }
+  - title: 'For Visitors'
+    links:
+      - { link: '/organizers/', text: 'Organizers' }
+      - {
+          link: '/blog/2017/01/01/code-of-conduct.html',
+          text: 'Code of Conduct',
+        }
+      - { link: 'https://developers.google.com', text: 'Google Developers' }
+  - title: 'For Partners'
+    links:
+      - {
+          link: 'https://firebasestorage.googleapis.com/v0/b/devfestflorida.appspot.com/o/DevFestFlorida-Partnership-2019.pdf?alt=media&token=81f3f199-a5a9-464e-8ba8-df353b4c4c2a',
+          text: 'Partnership Proposition',
+          subtext: "Read more about the benefits you'll receive for being a generous sponsor of DevFest Florida 2017. From your logo on our shirts/website to the opportunity to address the crowd.",
+          imgUrl: '/img/logos/partnership-2019.png',
+        }
+      - {
+          link: 'mailto:organizers@devfestflorida.org',
+          text: 'Become a Sponsor',
+          subtext: 'Sponsor today and help DevFest Florida pay for speaker travel, provide tickets to those that cannot afford them, throw a fantastic after conference party, give away cool swag & prizes',
+          imgUrl: '/img/logos/click-to-sponsor.jpg',
+        }
+  - title: 'Contact Us'
+    links:
+      - {
+          link: 'mailto:organizers@devfestflorida.org',
+          text: 'organizers@devfestflorida.org',
+        }
+      - social:
+          - {
+              link: 'https://plus.google.com/+DevFestFloridaOrg',
+              text: '<i class="fa fa-google-plus" aria-hidden="true"></i>',
+            }
+          - {
+              link: 'https://twitter.com/devfestflorida',
+              text: '<i class="fa fa-twitter" aria-hidden="true"></i>',
+            }
+          - {
+              link: 'https://facebook.com/devfestflorida',
+              text: '<i class="fa fa-facebook-official" aria-hidden="true"></i>',
+            }
 
--
-  title: "Subscribe"
-  links:
-   - {permalink: "https://firebaseapp.us13.list-manage.com/subscribe/post?u=3f4db9aefbaccd123ad402ffd&amp;id=74fc03d0fa", text: "DevFest Florida Newsletter"}
+  - title: 'Subscribe'
+    links:
+      - {
+          permalink: 'https://firebaseapp.us13.list-manage.com/subscribe/post?u=3f4db9aefbaccd123ad402ffd&amp;id=74fc03d0fa',
+          text: 'DevFest Florida Newsletter',
+        }
