@@ -3,48 +3,107 @@
   <br>
   <div class="site-card-container mdl-grid">
     <div class="row mdl-cell mdl-cell--12-col">
-      <div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
-            {% for ticketsOffer in site.data.tickets.ticketTypes %}
-              {% assign colWidth = 12 | divided_by: forloop.length %}
-              {% assign check = forloop.index | modulo:2 %}
-              <div class="col-md-{{ colWidth }} col-sm-{{ colWidth }} pricing-col {% if ticketsOffer.featured != null %}pricing-col-featured{% endif %}">
-                {% if ticketsOffer.ribbon != null %}
-                  <div class="pricing-ribbon">{{ ticketsOffer.ribbon }}</div>
-                {% endif %}
-                <div class="pricing-header">
-                  {% if ticketsOffer.disabled != true %}
-                    <p class="title">{{ ticketsOffer.name }}</p>
-                    <p class="price"><span class="currency">{{ ticketsOffer.priceCurrency }} </span>{{ ticketsOffer.price }}</p>
-                  {% else %}
-                    <p class="title disabled">{{ ticketsOffer.name }}</p>
-                    <p class="price disabled-button"><span class="currency">{{ ticketsOffer.priceCurrency }} </span>{{ ticketsOffer.price }}</p>
-                  {% endif %}
-                </div>
-                <div class="pricing-content">
-                  <ul>
-                    {% for listItem in ticketsOffer.ticketContentList %}
-                    <li>{{ listItem }}</li>
-                    {% endfor %}
-                  </ul>
-                  {% if ticketsOffer.soldOut == true %}
-                    <span class="button disabled" style="margin-top:10px;">{{ ticketsOffer.soldOutText }}</span>
-                  {% elsif ticketsOffer.disabled != true %}
-                    <a class="button" href="{{ ticketsOffer.buyButtonLink }}" target="_blank">{{ ticketsOffer.buyButtonText }}</a>
-                  {% elsif ticketsOffer.ended == true %}
-                    {% assign ticketvalidThrough = ticketsOffer.validThrough | split: "T" %}
-                    <span class="button fallback"  style="margin-top:10px; background:gray;">
-                      Sales ended on<br>{{ ticketvalidThrough[0] | date: "%-d %B %Y"}}
-                    </span>
-                  {% else %}
-                    {% assign ticketValidFrom = ticketsOffer.validFrom | split: "T" %}
-                    <span class="button fallback"  style="margin-top:10px;">
-                      Sales begin on<br>{{ ticketValidFrom[0] | date: "%-d %B %Y"}}
-                    </span>
-                  {% endif %}
-                </div>
+        <style>
+        .ticketsContainer
+        {
+
+        }
+        .pricing-col{
+          vertical-align: top;
+          display: inline-block;
+          *display: inline;  
+          padding:10px;
+        }        
+        </style>
+
+        <div class="ticketsContainer">
+          <div class="col-md-4 col-sm-4 pricing-col ">               
+            <div class="pricing-header">
+                <p class="title disabled">Super early bird</p>
+                <p class="price disabled-button"><span class="currency"> </span>$100</p>
+            </div>
+            <div>
+                <a class="big-button white mdl-button mdl-js-ripple-effect" 
+                   href="https://www.eventbrite.com/e/devfest-florida-orlando-tickets-48558589047?aff=eac2" 
+                   target="_tickets" 
+                   data-upgraded=",MaterialRipple">
+                  BUY TICKET
+                </a>
+            </div>            
+            <div class="pricing-content">              
+              <span class="button fallback" style="margin-top:10px;">
+                  Tickets number are limited
+              </span>              
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 pricing-col ">               
+              <div class="pricing-header">
+                  <p class="title disabled">Early bird</p>
+                  <p class="price disabled-button"><span class="currency"> </span>$125</p>
               </div>
-            {% endfor %}
-      </div>
+              <div>
+                  <a class="big-button white mdl-button mdl-js-ripple-effect" 
+                     href="https://www.eventbrite.com/e/devfest-florida-orlando-tickets-48558589047?aff=eac2" 
+                     target="_tickets" 
+                     data-upgraded=",MaterialRipple">
+                    BUY TICKET
+                  </a>
+              </div>            
+              <div class="pricing-content">              
+                <span class="button fallback" style="margin-top:10px;">
+                    Tickets number are limited
+                </span>              
+              </div>
+          </div>
+            
+          <div class="col-md-4 col-sm-4 pricing-col ">               
+              <div class="pricing-header">
+                  <p class="title disabled">Community friend</p>
+                  <p class="price disabled-button"><span class="currency"> </span>$175</p>
+              </div>
+              <div>
+                  <a class="big-button white mdl-button mdl-js-ripple-effect" 
+                     href="https://www.eventbrite.com/e/devfest-florida-orlando-tickets-48558589047?aff=eac2" 
+                     target="_tickets" 
+                     data-upgraded=",MaterialRipple">
+                    BUY TICKET
+                  </a>
+              </div>            
+              <div class="pricing-content">              
+                <span class="button fallback" style="margin-top:10px;">
+                  Sale ends <b>Dec 2018</b>
+                </span>              
+              </div>
+          </div>
+
+          <!--  
+          <div class="col-md-4 col-sm-4 pricing-col ">               
+              <div class="pricing-header">
+                  <p class="title disabled">Faithful Supporter</p>
+                  <p class="price disabled-button"><span class="currency"> </span>$225</p>
+              </div>
+              <div>
+                  <a class="big-button white mdl-button mdl-js-ripple-effect" 
+                     href="https://www.eventbrite.com/e/devfest-florida-orlando-tickets-48558589047?aff=eac2" 
+                     target="_tickets" 
+                     data-upgraded=",MaterialRipple">
+                    BUY TICKET
+                  </a>
+              </div>            
+              <div class="pricing-content">              
+                <span class="button fallback" style="margin-top:10px;">
+                  Sale ends Jan 19th, 2019
+                </span>              
+              </div>
+          </div>
+        -->
+
+
+
+
+
+        </div>
     </div>
     <div class="ticket-disclaimer center-align-items">
       <p>Tickets grant access to all speaker sessions, breakouts, code labs, coffee breaks, lunch, and entrance to the after party. <em>Accommodation and/or travel is NOT included in the ticket price. Ticket vendor fees may be extra.</em></p>
